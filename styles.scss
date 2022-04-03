@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: 'Fredoka One', cursive;
+    height: 100vh;
+}
+
+// navbar
+nav {
+    width: 100%;
+    height: 112px;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+
+    .nav-logo {
+        flex: 1;
+        padding-top: 15px;
+        padding-left: 20px;
+        box-sizing: border-box;
+     
+        .logo {
+            width: 265px;
+            height: 56px;
+            cursor: pointer;     
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .nav-info {
+        flex: 1;
+        display: flex;
+    
+        .nav-item {
+            display: flex;
+            align-items: center;
+            margin-top: -15px;
+            width: 50%;
+            
+            .nav-item-image {
+                width: 50px;
+                height: 46px;
+                margin-right: 28px;
+                cursor: pointer;
+                
+                img {
+                    width: 100%;
+                }
+            }
+
+            .nav-item-content {
+                height: 80%;
+                width: 100%;
+                padding-top: 17px;
+                box-sizing: border-box;
+
+                h5 {
+                    font-size: 16px;
+                    line-height: 15px;
+                    font-weight: 600;
+                    color: #00789E;
+                }
+
+                p {
+                    font-weight: 500;
+                    line-height: 18px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+// end navbar
+
+// banner
+
+.banner {
+    width: 100%;
+    padding-top: 112px;    
+    .carousel-inner {
+        width: 100%;
+    
+        .carousel-item {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+    
+            .carousel-desc {
+                top: 32%;
+                left: 100;
+                position: absolute;
+
+                h2 {
+                    font-size: 50px;
+                    color: #FFFFFF;
+                    width: 600px;
+                    font-weight: bold;
+                    margin-left: 180px;
+                    line-height: 60px;
+                    margin-bottom: 35px;
+                }
+
+                p {
+                    color: #FFFFFF;
+                    font-weight: 700;
+                    margin-left: 180px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+// end banner
+
+
+// advantages
+
+.advantages {
+    padding-top: 68px;
+    
+    .header {
+        text-align: center;
+    
+        h3 {
+
+            font-weight: 700;
+            font-size: 35px;
+        }
+    }
+    
+    .content {
+        margin-top: 66px;
+        padding-left: 40px;
+        padding-right: 40px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+
+        .advantages-card {
+            flex: 1;
+    
+            .card-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                width: 141px;
+                height: 141px;
+                border-radius: 30px;
+                background: #FFFFFF;    
+                box-shadow: 0px 4px 4px rgba(0, 120, 158, 0.6);
+    
+                .icon-image {
+                    width: 66px;
+                    height: 66px;
+                    display: flex;
+                    align-items: center;
+    
+                    img {
+                        width: 100%;
+                        
+                    }
+                }
+            }
+    
+            .desc {
+                margin-top: 26px;
+    
+                h4 {
+                    text-align: center;
+                }
+    
+                p {
+                    margin: 0 auto;
+                    width: 186px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive 
+@media (max-width: 576px) {
+    
+    // banner
+    .banner {
+        padding-top: 61px;
+    
+        .carousel-inner {
+    
+            .carousel-item {
+         
+                .carousel-desc {
+                    top: 20px;
+
+                    h2 {
+                        font-size: 20px;
+                        width: 400px;
+                        margin-left: 80px;
+                        line-height: 40px;
+                        margin-bottom: 20px;
+                    }
+    
+                    p {
+                        color: #FFFFFF;
+                        font-weight: 700;
+                        font-size:10px;
+                        margin-left: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    // navbar
+    nav {
+        height: 61px;
+
+        .nav-logo {
+            flex: 1;
+            padding-top: 0;
+
+            .logo {
+                width: 158px;
+                height: 34px;
+            
+            }
+        }     
+        .nav-info {
+            flex: 0.5;
+            justify-content: flex-end;
+
+            .nav-item {
+                width: 50px;
+                height: 55px;
+                justify-content: flex-end;
+
+                .nav-item-image {
+                    margin-right: 5px;
+                    width: 28px;
+                    height: 28px;
+                }
+
+                .nav-item-content {
+                    display: none;
+                }
+                
+            }
+        }
+    }
+    // end navbar
+
+    // banner
+    .banner {
+        padding-top: 61px;
+    
+        .carousel-inner {
+    
+            .carousel-item {
+         
+                .carousel-desc {
+                    top: 25%;
+
+                    h2 {
+                        font-size: 30px;
+                        width: 400px;
+                        margin-left: 20%;
+                        line-height: 40px;
+                        margin-bottom: 4%;
+                    }
+    
+                    p {
+                        color: #FFFFFF;
+                        font-weight: 700;
+                        font-size: 20px;
+                        margin-left: 20%;
+                    }
+                }
+            }
+        }
+    }
+    // end banner
+
+    // advantages
+    .advantages {
+        .header {
+            h3 {
+                font-size: 27px;
+            }
+        }
+    }
+    // end advantages
+
+}
+
+@media (max-width: 992px) {
+    nav {
+
+        .nav-logo {
+             flex: 0.8;
+        }
+
+        .nav-info {
+             flex: 1.2;
+        } 
+     }
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+

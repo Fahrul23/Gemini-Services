@@ -1,0 +1,13 @@
+.banner .carousel-control-prev .carousel-control-prev-icon {
+    background-image: url('./assets/icons/left.png');
+    width: 45px;
+    height: 45px;
+    margin-left: -60px;
+}
+ 
+.banner .carousel-control-next .carousel-control-next-icon {
+    background-image: url('./assets/icons/right.png');
+    width: 45px;
+    height: 45px;
+    margin-right: -60px;
+}
